@@ -950,7 +950,7 @@ Banner Style
 }
 
 .main-banner .left-content .white-button a {
-  background-color: #4b8ef1;
+  background-color: #FFB100;
   color: #fff !important;
 }
 
@@ -1988,7 +1988,7 @@ responsive
     margin-right: 0;
   }
   .main-banner .left-content .white-button a {
-    background-color: #4b8ef1;
+    background-color: #FFB100;
     color: #fff !important;
   }
   form#contact {
