@@ -184,3 +184,15 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+  .image-container {
+    display: flex; /* membuat tampilan gambar sejajar */
+    flex-wrap: wrap; /* memungkinkan gambar untuk wrap ke baris baru */
+    justify-content: space-between;
+    align-items: center;
+  }
+.image-container img {
+    width: 25%; /* membuat gambar masing-masing 33.33% dari lebar container */
+    height: auto; /* menjaga proporsi asli gambar */
+    object-fit: cover; /* memotong gambar jika diperlukan */
+  }
