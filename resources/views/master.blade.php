@@ -12,7 +12,7 @@
 
 @include('layout.header')
 
-    <div id="modal" class="popupContainer" style="display:none;">
+    {{-- <div id="modal" class="popupContainer" style="display:none;">
         <div class="popupHeader">
             <span class="header_title">Login</span>
             <span class="modal_close"><i class="fa fa-times"></i></span>
@@ -98,7 +98,7 @@
                 </form>
             </div>
         </section>
-    </div>
+    </div> --}}
 
     <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="container">
@@ -124,7 +124,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                                <img src="assets/images/slider-dec.png" alt="">
+                                <img src="assets/images/sync-web-app.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -140,10 +140,10 @@
                     <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
                         <h4>Amazing <em>Services &amp; Features</em> for you</h4>
                         <img src="assets/images/heading-line-dec.png" alt="">
-                        <p>If you need the greatest collection of HTML templates for your business, please visit <a
-                                rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS</a> Blog. If you
-                            need to have a contact form PHP script, go to <a href="https://templatemo.com/contact"
-                                target="_parent">our contact page</a> for more information.</p>
+                        <p>Jadikan Pengelolaan Bisnis Menjadi Lebih Mudah!! Berkat Digitalisasi <a
+                                rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS</a> 
+                                Segeralah Bergabung Dengan Kami, <a href="https://templatemo.com/contact"
+                                target="_parent">Kontak Kami</a> Untuk Info Lebih Lanjut</p>
                     </div>
                 </div>
             </div>
