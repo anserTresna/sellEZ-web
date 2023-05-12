@@ -20,8 +20,22 @@
                     <div class="card shadow-lg">
                         <div class="card-body p-5">
                             <h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
-                            <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+                            
+                            @if (session('loginError'))
+                            <div class="alert alert-danger" role="alert">
+                                {{ session('loginError') }}
+                            </div> 
+                            @endif
+                            @if(session()->has('success'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{session('success')}}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                            @endif
+
+                            <form action="/login" method="POST" class="needs-validation" novalidate="" autocomplete="off">
                                 <div class="mb-3">
+                                    @csrf
                                     <label class="mb-2 text-muted" for="email">E-Mail Address</label>
                                     <input id="email" type="email" class="form-control" name="email" value="" required
                                         autofocus>

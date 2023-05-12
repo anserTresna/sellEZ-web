@@ -5,7 +5,7 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
+                    <a href="/" class="logo">
                         <img src="assets/images/logu.png" alt="SellEz">
                     </a>
 
@@ -18,7 +18,7 @@
                         <li class="scroll-to-section"><a href="#about">About</a></li>
                         <li class="scroll-to-section"><a href="#newsletter">Newsletter</a></li>
                         <li>
-                            <div class="gradient-button"><a id="modal_trigger" href="#modal"><i
+                            <div class="gradient-button"><a id="modal_trigger" href="/login"><i
                                         class="fa fa-sign-in-alt"></i> Sign In Now</a></div>
                         </li>
                     </ul>

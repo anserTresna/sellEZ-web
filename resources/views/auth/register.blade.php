@@ -20,14 +20,18 @@
                     <div class="card shadow-lg">
                         <div class="card-body p-5">
                             <h1 class="fs-4 card-title fw-bold mb-4">Register</h1>
-                            <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+                            <form action="/register" method="POST" class="needs-validation" novalidate="" autocomplete="off">
+                                @csrf
                                 <div class="mb-3">
                                     <label class="mb-2 text-muted" for="name">Name</label>
-                                    <input id="name" type="text" class="form-control" name="name" value="" required
+                                    <input id="name" type="text" class="form-control" name="name" @error('name') is-invalid @enderror value="" required
                                         autofocus>
+                                        @error('name')
+                                            
                                     <div class="invalid-feedback">
                                         Name is required
                                     </div>
+                                    @enderror
                                 </div>
 
                                 <div class="mb-3">
@@ -42,7 +46,7 @@
                                     <label class="mb-2 text-muted" for="password">Password</label>
                                     <input id="password" type="password" class="form-control" name="password" required>
                                     <div class="invalid-feedback">
-                                        Password is required
+                                        Your password must be 8 characters long.
                                     </div>
                                 </div>
 
