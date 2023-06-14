@@ -26,7 +26,7 @@ class LoginController extends Controller
         } elseif (auth()->user()->role === 'kasir') {
             return redirect()->intended('/');
         } else {
-            return redirect()->intended('/');
+            return redirect()->intended('/dashboard');
         }
     }
         
@@ -38,7 +38,7 @@ class LoginController extends Controller
         Auth::logout();
         request()->session()->invalidate();
         request()->session()->regenerateToken();
-        return redirect('/login');
+        return redirect('/login')->with('logout', 'Akun telah berhasil keluar');
     }
 
 }

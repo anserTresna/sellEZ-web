@@ -32,6 +32,12 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                             @endif
+                            @if(session()->has('logout'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{session('logout')}}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                            @endif
 
                             <form action="/login" method="POST" class="needs-validation" novalidate="" autocomplete="off">
                                 <div class="mb-3">
@@ -47,9 +53,6 @@
                                 <div class="mb-3">
                                     <div class="mb-2 w-100">
                                         <label class="text-muted" for="password">Password</label>
-                                        <a href="forgot.html" class="float-end">
-                                            Forgot Password?
-                                        </a>
                                     </div>
                                     <input id="password" type="password" class="form-control" name="password" required>
                                     <div class="invalid-feedback">
@@ -75,7 +78,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-5 text-muted">
-                        Copyright &copy; 2017-2021 &mdash; Your Company
+                        Copyright &copy; 2023 &mdash; SellEZ
                     </div>
                 </div>
             </div>
